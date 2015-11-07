@@ -1,6 +1,6 @@
 
 // Question 1
-/*var banjo = prompt('Can I play the banjo?');
+var banjo = prompt('Can I play the banjo?');
 banjo = banjo.toLowerCase();
 console.log("banjo variable set to " + banjo);
 
@@ -54,7 +54,7 @@ else {
 
 //Question 5
 var faveFood = prompt('Are enchiladas my favorite food?');
-faveFood = faveFood.toLowerCase; 
+faveFood = faveFood.toLowerCase(); 
 console.log('faveFood variable set to ' + 'faveFood');
 
 if (faveFood === 'yes' || faveFood === 'y') {
@@ -63,7 +63,7 @@ if (faveFood === 'yes' || faveFood === 'y') {
 else {
 	alert('That is incorrect. I luuuuuuuv enchiladas!');
 }
-*/
+
 //Question 6
 var seattleAge = prompt('How old was I when I moved to Seattle?');
 console.log('seattleAge variable set to ' + seattleAge);
