@@ -51,3 +51,15 @@ if (jerseyNumber == 25) {
 else {
 	alert('I\'m sorry, but I don\'t think you entered a valid number.');
 }
+
+//Question 5
+var faveFood = prompt('Are enchiladas my favorite food?');
+faveFood = faveFood.toLowerCase; 
+console.log('faveFood variable set to ' + 'faveFood');
+
+if (faveFood === 'yes' || faveFood === 'y') {
+	alert('You\'re correct! If you know a good place for enchiladas in Seattle, be sure to let me know!');
+}
+else {
+	alert('That is incorrect. I luuuuuuuv enchiladas!');
+}
