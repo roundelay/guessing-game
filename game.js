@@ -1,16 +1,27 @@
 
-// Question 1
+// Questions array
+var questions = [
+	'Can I play the banjo?',
+	'Did I grow up in the Napa Valley?',
+	'Do I like Marvel comics better than DC comics?',
+	'What is my number on my softball jersey?',
+	'Are enchiladas my favorite food?',
+	'How old was I when I moved to Seattle?' ];
+
+var answers = ['yes','y','no','n', 25, 24];
+
+//Question 1
 function banjoQ() {
-	var banjo = prompt('Can I play the banjo?'); 	// asks the question
+	var banjo = prompt(questions[0]); 	// asks the question
 	banjo = banjo.toLowerCase();					// makes the answer lowercase to prevent capitalization errors
 	console.log("banjo variable set to " + banjo);  // console logs the answer
 	var el = document.getElementById('firstAlert');	// in the HTML element with id = firstAlert, do the following:
 
-	if (banjo === "no" || banjo === "n") {
-		el.innerHTML = 'Excellent guess! I can\'t play the banjo, but I can play a little guitar.';
+	if (banjo == answers[2] || banjo == answers[3]) {
+		el.textContent = 'Excellent guess! I can\'t play the banjo, but I can play a little guitar.';
 	}
 	else {
-		el.innerHTML = 'Sorry, that is incorrect!';
+		el.textContent = 'Sorry, that is incorrect!';
 	}												// if-else statement returns the appropriate response based on the answer.
 
 }
@@ -22,11 +33,11 @@ function hometownQ() {
 	console.log("home variable set to " + home);
 	var el = document.getElementById('secondAlert');
 
-	if (home === "yes" || home === "y") {
-		el.innerHTML = 'You are correct! Have a glass of wine to celebrate.';
+	if (home === answers[0] || home == answers[1]) {
+		el.textContent = 'You are correct! Have a glass of wine to celebrate.';
 	}
 	else {
-		el.innerHTML = 'Sorry, that is not the right answer. No wine for you.';
+		el.textContent = 'Sorry, that is not the right answer. No wine for you.';
 	}
 }
 
@@ -37,11 +48,11 @@ function comicsQ() {
 	console.log("comics variable set to " + comics);
 	var el = document.getElementById('thirdAlert');
 	
-	if (comics === "yes" || comics === "y") {
-		el.innerHTML = 'Good job! Captain America salutes you!';
+	if (comics == answers[0] || comics == answers[1]) {
+		el.textContent = 'Good job! Captain America salutes you!';
 	}
 	else {
-		el.innerHTML = 'You have chosen... poorly. For your foolishness, Thor bops you on the head with his hammer.';
+		el.textContent = 'You have chosen... poorly. For your foolishness, Thor bops you on the head with his hammer.';
 	} 
 }
 
@@ -51,17 +62,17 @@ function jerseyQ() {
 	console.log('jerseyNumber variable set to ' + jerseyNumber);
 	var el = document.getElementById('fourthAlert');
 	
-	if (jerseyNumber == 25) {
-		el.innerHTML = 'That is correct! Great guess!';
+	if (jerseyNumber == answers[4]) {
+		el.textContent = 'That is correct! Great guess!';
 	}
-		else if (jerseyNumber > 25) {
-			el.innerHTML = 'Sorry that guess is too high';
+		else if (jerseyNumber > answers[4]) {
+			el.textContent = 'Sorry that guess is too high';
 		}
-		else if (jerseyNumber < 25) {
-			el.innerHTML = 'Nope. Your guess is too low!';
+		else if (jerseyNumber < answers[4]) {
+			el.textContent = 'Nope. Your guess is too low!';
 		}
 	else {
-		el.innerHTML = 'I\'m sorry, but I don\'t think you entered a valid number.';
+		el.textContent = 'I\'m sorry, but I don\'t think you entered a valid number.';
 	}
 }
 
@@ -72,11 +83,11 @@ function foodQ() {
 	console.log('faveFood variable set to ' + 'faveFood');
 	var el = document.getElementById('fifthAlert');
 	
-	if (faveFood === 'yes' || faveFood === 'y') {
-		el.innerHTML = 'You\'re correct! If you know a good place for enchiladas in Seattle, be sure to let me know!';
+	if (faveFood == answers[0] || faveFood == answers[1]) {
+		el.textContent = 'You\'re correct! If you know a good place for enchiladas in Seattle, be sure to let me know!';
 	}
 	else {
-		el.innerHTML = 'That is incorrect. I luuuuuuuv enchiladas!';
+		el.textContent = 'That is incorrect. I luuuuuuuv enchiladas!';
 	}
 }
 
@@ -86,17 +97,17 @@ function seattleAgeQ() {
 	console.log('seattleAge variable set to ' + seattleAge);
 	var el = document.getElementById('sixthAlert');
 
-	if (seattleAge == 24) {
-		el.innerHTML = 'You got it! Nice work.';
+	if (seattleAge == answers[5]) {
+		el.textContent = 'You got it! Nice work.';
 	}
-		else if (seattleAge > 24) {
-			el.innerHTML = 'Sorry that guess is too high';
+		else if (seattleAge > answers[5]) {
+			el.textContent = 'Sorry that guess is too high';
 		}
-		else if (seattleAge < 24) {
-			el.innerHTML = 'Nope. Your guess is too low!';
+		else if (seattleAge < answers[5]) {
+			el.textContent = 'Nope. Your guess is too low!';
 		}
 	else {
-		el.innerHTML = 'I\'m sorry, but I don\'t think you entered a valid number.';
+		el.textContent = 'I\'m sorry, but I don\'t think you entered a valid number.';
 	}
 }
 
@@ -105,4 +116,4 @@ hometownQ();
 comicsQ();
 jerseyQ();
 foodQ();
-seattleAgeQ();
+seattleAgeQ(); 
