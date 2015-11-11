@@ -7,7 +7,9 @@ The Guessing Game is a javascript and HTML homework project assigned as part of 
 (Autumn 2015).
 
 Updates:
-11/8/2015: Code updated to move questions into functions, and to move the alerts into the DOM. It's way less irritating that way.
+11/10/2015: Javascript updated to move questions into arrays, which just seems weird. CSS and images added to the webpage. Conditional
+formatting based on correct/incorrect answers applied.
+11/8/2015: Javascript updated to move questions into functions, and to move the alerts into the DOM. It's way less irritating that way.
 
 References:
 In creating the javascript for my guessing game, I referred to the "Javascript & JQuery" textbook by John Ducket. I also
