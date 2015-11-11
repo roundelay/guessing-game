@@ -1,0 +1,21 @@
+body {
+	background-color: #e1eafc;
+	padding-left: 20px;
+}
+h1, h2 {
+	font-family: Century gothic, sans-serif;
+}
+h4 {
+	font-family: Helvetica, sans-serif;
+}
+p {
+	font-family: Helvetica, sans-serif;
+}
+.right {
+	color: #018513;
+	font-weight: bold;
+}
+.wrong {
+	color: #d60202;
+	font-weight: bold;
+}

@@ -19,9 +19,11 @@ function banjoQ() {
 
 	if (banjo == answers[2] || banjo == answers[3]) {
 		el.innerHTML = 'Excellent guess! I can\'t play the banjo, but I can play a little guitar.<br /><img src = "images/spock.jpg" />';
+		el.className = 'right';
 	}
 	else {
 		el.textContent = 'Sorry, that is incorrect!';
+		el.className ='wrong';
 	}												// if-else statement returns the appropriate response based on the answer.
 
 };
@@ -35,9 +37,11 @@ function hometownQ() {
 
 	if (home === answers[0] || home == answers[1]) {
 		el.innerHTML = 'You are correct! Have a glass of wine to celebrate.<br /><img src = "images/picard.jpg" />';
+		el.className = 'right';
 	}
 	else {
 		el.textContent = 'Sorry, that is not the right answer. No wine for you.';
+		el.className = 'wrong';
 	}
 }
 
@@ -50,9 +54,11 @@ function comicsQ() {
 	
 	if (comics == answers[0] || comics == answers[1]) {
 		el.innerHTML = 'Good job! Captain America salutes you!<br /><img src = "images/cap.jpg" />';
+		el.className = 'right';
 	}
 	else {
 		el.textContent = 'You have chosen... poorly. For your foolishness, Thor bops you on the head with his hammer.';
+		el.className = 'wrong';
 	} 
 }
 
@@ -64,17 +70,19 @@ function jerseyQ() {
 	
 	if (jerseyNumber == answers[4]) {
 		el.innerHTML = 'That is correct! Great guess!<br /><img src = "images/picard.jpg" />';
-
-
+		el.className = 'right';
 	}
 		else if (jerseyNumber > answers[4]) {
 			el.textContent = 'Sorry that guess is too high';
+			el.className = 'wrong';
 		}
 		else if (jerseyNumber < answers[4]) {
 			el.textContent = 'Nope. Your guess is too low!';
+			el.className = 'wrong';
 		}
 	else {
 		el.textContent = 'I\'m sorry, but I don\'t think you entered a valid number.';
+		el.className = 'wrong';
 	}
 }
 
@@ -87,9 +95,11 @@ function foodQ() {
 	
 	if (faveFood == answers[0] || faveFood == answers[1]) {
 		el.innerHTML = 'You\'re correct! If you know a good place for enchiladas in Seattle, be sure to let me know!<br /><img src = "images/spock.jpg" />';
+		el.className = 'right';	
 	}
 	else {
 		el.textContent = 'That is incorrect. I luuuuuuuv enchiladas!';
+		el.className = 'wrong';
 	}
 }
 
@@ -101,15 +111,19 @@ function seattleAgeQ() {
 
 	if (seattleAge == answers[5]) {
 		el.innerHTML = 'You got it! Nice work.<br /><img src = "images/picard.jpg" />';
+		el.className = 'right';
 	}
 		else if (seattleAge > answers[5]) {
 			el.textContent = 'Sorry that guess is too high';
+			el.className = 'wrong';
 		}
 		else if (seattleAge < answers[5]) {
 			el.textContent = 'Nope. Your guess is too low!';
+			el.className = 'wrong';
 		}
 	else {
 		el.textContent = 'I\'m sorry, but I don\'t think you entered a valid number.';
+		el.className = 'wrong';
 	}
 }
 
