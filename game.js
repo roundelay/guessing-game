@@ -15,16 +15,16 @@ function banjoQ() {
 	var banjo = prompt(questions[0]); 	// asks the question
 	banjo = banjo.toLowerCase();					// makes the answer lowercase to prevent capitalization errors
 	console.log("banjo variable set to " + banjo);  // console logs the answer
-	var el = document.getElementById('firstAlert');	// in the HTML element with id = firstAlert, do the following:
+	var el = document.getElementById('firstAlert');
 
 	if (banjo == answers[2] || banjo == answers[3]) {
-		el.textContent = 'Excellent guess! I can\'t play the banjo, but I can play a little guitar.';
+		el.innerHTML = 'Excellent guess! I can\'t play the banjo, but I can play a little guitar.<br /><img src = "images/spock.jpg" />';
 	}
 	else {
 		el.textContent = 'Sorry, that is incorrect!';
 	}												// if-else statement returns the appropriate response based on the answer.
 
-}
+};
 
 //Question 2
 function hometownQ() {
@@ -34,7 +34,7 @@ function hometownQ() {
 	var el = document.getElementById('secondAlert');
 
 	if (home === answers[0] || home == answers[1]) {
-		el.textContent = 'You are correct! Have a glass of wine to celebrate.';
+		el.innerHTML = 'You are correct! Have a glass of wine to celebrate.<br /><img src = "images/picard.jpg" />';
 	}
 	else {
 		el.textContent = 'Sorry, that is not the right answer. No wine for you.';
@@ -49,7 +49,7 @@ function comicsQ() {
 	var el = document.getElementById('thirdAlert');
 	
 	if (comics == answers[0] || comics == answers[1]) {
-		el.textContent = 'Good job! Captain America salutes you!';
+		el.innerHTML = 'Good job! Captain America salutes you!<br /><img src = "images/cap.jpg" />';
 	}
 	else {
 		el.textContent = 'You have chosen... poorly. For your foolishness, Thor bops you on the head with his hammer.';
@@ -63,7 +63,9 @@ function jerseyQ() {
 	var el = document.getElementById('fourthAlert');
 	
 	if (jerseyNumber == answers[4]) {
-		el.textContent = 'That is correct! Great guess!';
+		el.innerHTML = 'That is correct! Great guess!<br /><img src = "images/picard.jpg" />';
+
+
 	}
 		else if (jerseyNumber > answers[4]) {
 			el.textContent = 'Sorry that guess is too high';
@@ -84,7 +86,7 @@ function foodQ() {
 	var el = document.getElementById('fifthAlert');
 	
 	if (faveFood == answers[0] || faveFood == answers[1]) {
-		el.textContent = 'You\'re correct! If you know a good place for enchiladas in Seattle, be sure to let me know!';
+		el.innerHTML = 'You\'re correct! If you know a good place for enchiladas in Seattle, be sure to let me know!<br /><img src = "images/spock.jpg" />';
 	}
 	else {
 		el.textContent = 'That is incorrect. I luuuuuuuv enchiladas!';
@@ -98,7 +100,7 @@ function seattleAgeQ() {
 	var el = document.getElementById('sixthAlert');
 
 	if (seattleAge == answers[5]) {
-		el.textContent = 'You got it! Nice work.';
+		el.innerHTML = 'You got it! Nice work.<br /><img src = "images/picard.jpg" />';
 	}
 		else if (seattleAge > answers[5]) {
 			el.textContent = 'Sorry that guess is too high';
